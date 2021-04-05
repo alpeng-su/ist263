@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .part1 article {padding: 20px;}
+            .article1, .article2 {margin: 10px;}
+            .article1 {width: 50%; background-color: #efe8fc; border-radius: 1em;}
+            .article2 {float: right; background-color: #efe8fc; border-radius: 1em;}
+            .part2 {clear: both;}
+
+            .part2 {display: flex;}
+            .part2 article {padding: 20px;}
+            .article3, .article4 {margin: 10px;}
+            .article3 {flex: 2; order: 1; background-color: #efe8fc; border-radius: 1em;}
+            .article4 {flex: 2; order: 2; background-color: #efe8fc; border-radius: 1em;}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="skills.html">Skills</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <h1>Contact</h1>
+
+        <div class="part1">
+            <article class="article1">
+                <p>
+                    <strong>Address</strong><br>
+                    Alexis Peng<br>
+                    505 Comstock Ave.<br>
+                    Syracuse, NY 13244
+                </p>
+            </article>
+
+            <article class="article2">
+                <p>
+                    <a href="mailto:alpeng@syr.edu">alpeng@syr.edu</a>
+                <br>
+                    <a href="https://www.linkedin.com/in/alexispeng/"><img src="../images/logo-sized.png" alt="LinkedIn Logo"> My LinkedIn Profile
+                </p>
+            </article>
+        </div>
+        
+        <div class="part2">
+            <article class="article3">
+                <h3>Contact Form</h3>
+                    <form action="mailto:alpeng@syr.edu" method="post">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" name="full name" id="fullname"><br>
+
+                        <label for="email">Email Address:</label>
+                        <input type="text" name="email" id="email"><br>
+
+                        <p>Please select your pronouns (Check all that apply):</p>
+                            <input type="checkbox" name="pronouns" id="pronounsher" value="she/her">
+                            <label for="pronounsher">She/Her/Hers</label>
+                            <input type="checkbox" name="pronouns" id="pronounshim" value="he/him">
+                            <label for="pronounshim">He/Him/His</label>
+                            <input type="checkbox" name="pronouns" id="pronounsthem" value="they/them">
+                            <label for="pronounsthem">They/Them/Theirs</label>
+                            <input type="checkbox" name="pronouns" id="pronounsother" value="other">
+                            <label for="pronounsother">Other</label><br>
+
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" rows="10" cols="50">Write me a message here.</textarea><br>
+
+                        <input type="submit" value="Send">
+                    </form>
+            </article>
+
+            <article class="article4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.013341042948!2d-76.13123548452836!3d43.04115079980888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f30adff1d6e1%3A0x1be46be7c2373b12!2s505%20Comstock%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1614266334246!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+        </div>
+    </body>
+</html>
