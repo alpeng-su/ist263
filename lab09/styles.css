@@ -1,0 +1,38 @@
+body {
+    background-color: #def5ff;
+}
+
+p {
+    background-color: #efe8fc;
+    padding: 20px;
+}
+
+ul {
+    background-color: #efe8fc;
+    padding: 20px;
+}
+
+a:link {
+    color: #ff54ac;
+}
+
+a:visited {
+    color: #75afff;
+}
+
+a:hover {
+    color: #d036ff;
+}
+
+nav {
+    background-color: #efe8fc;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+ nav a {
+     color: #def5ff;
+ }
+
+ nav a:hover {
+     background-color: #75afff;
+ }
