@@ -24,15 +24,31 @@ a:hover {
     color: #d036ff;
 }
 
-nav {
-    background-color: #efe8fc;
-    padding: 10px;
-    margin-bottom: 30px;
-}
- nav a {
+    nav {
+        background-color: #efe8fc;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+ 
+    nav a {
      color: #def5ff;
  }
 
  nav a:hover {
      background-color: #75afff;
  }
+
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: #efe8fc;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    nav a {
+        display: block;
+        viewport-fit: 100%;
+        padding: 10px;
+    }
+    span {
+        display: none;
+    }
