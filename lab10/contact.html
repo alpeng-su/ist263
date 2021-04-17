@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            #skipbutton {
+                position: absolute;
+                /* position based on top left of viewport */
+                left: -999px;
+                /* means the element is off screen */
+                background-color: white;
+                border: 1px solid black;
+            }
+            /* focus means when the item is tabbed to */
+            #skipbutton:focus {
+                position: absolute;
+                left: 10px;
+            }
+            
+            .part1 {background-color: #efe8fc;}
+            .part1 section {padding: 20px;}
+            .section1, .section2 {margin: 10px;}
+            .section1 {float: left; border-radius: 1em;}
+            .section2 {border-radius: 1em;}
+            .part2 {clear: both;}
+
+            .part2 {display: flex; background-color: #efe8fc; flex-wrap: wrap;}
+            .part2 section {padding: 20px;}
+            .section3, .section4 {margin: 10px;}
+            .section3 {flex: 2; order: 1; border-radius: 1em;}
+            .section4 {flex: 2; order: 2; border-radius: 1em;}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> <span>|</span>
+            <a href="skills.html">Skills</a> <span>|</span>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <h1>Contact</h1>
+
+        <a id="skipbutton" href="#maincontent">Skip to Content</a>
+        <!-- anchor link - links lower on the page -->
+
+        <a id="maincontent"></a>
+
+        <div class="part1">
+            <section class="section1">
+                <p>
+                    <strong>Address</strong><br>
+                    Alexis Peng<br>
+                    505 Comstock Ave.<br>
+                    Syracuse, NY 13244
+                </p>
+            </section>
+
+            <section class="section2">
+                <p>
+                    <a href="mailto:alpeng@syr.edu">alpeng@syr.edu</a>
+                <br>
+                    <a href="https://www.linkedin.com/in/alexispeng/"><img src="../images/logo-sized.png" alt="LinkedIn Logo"> My LinkedIn Profile
+                </p>
+            </section>
+        </div>
+        
+        <div class="part2">
+            <section class="section3">
+                <h3>Contact Form</h3>
+                    <form action="mailto:alpeng@syr.edu" method="post">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" name="full name" id="fullname"><br>
+
+                        <label for="email">Email Address:</label>
+                        <input type="text" name="email" id="email"><br>
+
+                        <p>Please select your pronouns (Check all that apply):</p>
+                            <input type="checkbox" name="pronouns" id="pronounsher" value="she/her">
+                            <label for="pronounsher">She/Her/Hers</label>
+                            <input type="checkbox" name="pronouns" id="pronounshim" value="he/him">
+                            <label for="pronounshim">He/Him/His</label>
+                            <input type="checkbox" name="pronouns" id="pronounsthem" value="they/them">
+                            <label for="pronounsthem">They/Them/Theirs</label>
+                            <input type="checkbox" name="pronouns" id="pronounsother" value="other">
+                            <label for="pronounsother">Other</label><br>
+
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" rows="10" cols="50">Write me a message here.</textarea><br>
+
+                        <input type="submit" value="Send">
+                    </form>
+            </section>
+
+            <section class="section4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.013341042948!2d-76.13123548452836!3d43.04115079980888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f30adff1d6e1%3A0x1be46be7c2373b12!2s505%20Comstock%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1614266334246!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </div>
+    </body>
+</html>

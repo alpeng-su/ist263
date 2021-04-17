@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alexis Peng - Bio</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            #skipbutton {
+                position: absolute;
+                /* position based on top left of viewport */
+                left: -999px;
+                /* means the element is off screen */
+                background-color: white;
+                border: 1px solid black;
+            }
+            /* focus means when the item is tabbed to */
+            #skipbutton:focus {
+                position: absolute;
+                left: 10px;
+            }
+            
+            .quote {float: right;}
+            .header {max-width: 100%;}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> <span>|</span>
+            <a href="skills.html">Skills</a> <span>|</span>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a id="skipbutton" href="#maincontent">Skip to Content</a>
+        <!-- anchor link - links lower on the page -->
+        
+        <div class="header">
+            <header>
+                <img src="../images/bio-banner.jpg" alt="bio banner">
+            </header>
+        </div>
+       
+        <a id="maincontent"></a>
+        <main>
+            <h1>Alexis Peng's Biography</h1>
+
+            <p>
+            My name is Alexis Peng. I am a <strong>public relations</strong> major with a double minor in information management and technology and sociology. I am interested in branding and social media strategy in the corporate and entertainment industries. My extracurricular activities include Hill Communications, PRSSA, and University 100. I am also in a multicultural sorority called alpha Kappa Delta Kappa Phi International Sorority Inc.
+            </p>
+
+            <h2>Personal Information</h2>
+            <p>
+                My family consists of my mom, my dad, and my younger sister. Both my parents are immigrants from Taiwan. 
+            <br>
+                In my free time, I enjoy sewing or singing. I also love watching movies with my family. Some of my favorites include:
+            </p>
+            <ul>
+                <li>The Departed</li>
+                <li>Sleepers</li>
+                <li>Serendipity</li>
+            </ul>
+
+            <p>
+                Since I was young, my mom had movies that she wanted to show my sister and me. This created my interest in film and the entertainment industry.
+            </p>
+        </main>
+        
+        <footer>
+            <hr>
+
+            &copy; 2020
+            <div class="quote">
+                “Everything you do or say is public relations.” – Unknown
+            </div>
+        </footer>
+    </body>
+</html>
