@@ -17,7 +17,7 @@ a:link {
 }
 
 a:visited {
-    color: #75afff;
+    color: #0000b3;
 }
 
 a:hover {
@@ -50,5 +50,4 @@ a:hover {
         padding: 10px;
     }
     span {
-        display: none;
-    }
+        display: none;}
