@@ -3,32 +3,61 @@
     <head>
         <meta charset="utf-8">
         <title>UniSpeaks - Connect</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .header {
+                text-align: center;
+                border: 3px;
+                padding: 10px;
+            }
+            .form {
+                border: 3px;
+                padding: 10px;
+                line-height: 30px;
+                background-color: #fcd5b6;
+            }
+            input {
+                width: 99%;
+            }
+            textarea {
+                width: 99%;
+            }
+        </style>
     </head>
     <body>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="blog.html">Blog</a> |
-            <a href="podcast.html">Podcast</a> |
+            <a href="index.html">Home</a> <span>|</span>
+            <a href="blog.html">Blog</a> <span>|</span>
+            <a href="podcast.html">Podcast</a> <span>|</span>
             <a href="connect.html">Connect</a>
         </nav>
 
-        <h1>Tip Line</h1>
-        <p>
-            Do you have your own words of wisdom? Want to share your own experiences? Submit your own opinions and thoughts.
-        </p>
+        <main>
+            <div class="header">
+                <h1>Tip Line</h1>
+                <p>
+                    Do you have your own words of wisdom? Want to share your own experiences? Submit your own opinions and thoughts.
+                </p>
+            </div>
 
-        <hr>
+            <hr>
 
-        <h3>Send Your Thoughts</h3>
-        <form action="mailto:alpeng@g.syr.edu" method="post">
-            <label for="firstname">First Name:</label>
-            <input type="text" name="first name" id="firstname"><br>
+            <div class="form">
+                <h3>Send Your Thoughts</h3>
+                <form action="mailto:alpeng@g.syr.edu" method="post">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="first name" id="firstname"><br>
 
-            <label for="message">Message:</label>
-                <textarea name="message" id="message" rows="10" cols="50">Write me a message here.</textarea><br>
+                    <label for="message">Message:</label>
+                        <textarea name="message" id="message" rows="10" cols="50">Write me a message here.</textarea><br>
 
-                <input type="submit" value="Send">
-        </form>
+                        <input type="submit" value="Send">
+                </form>
+            </div>
+        </main>
     </body>
     <footer>
         <hr>

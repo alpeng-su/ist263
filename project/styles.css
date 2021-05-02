@@ -1,0 +1,63 @@
+a:link {
+    color: #a3297a;
+}
+
+a:visited {
+    color: #0000b3;
+}
+
+a:hover {
+    color: #66194d;
+}
+
+nav {
+    background-color: #dbb2eb;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #def5ff;
+}
+
+nav a:hover {
+    background-color: #b3f0ff;
+}
+
+body {
+    background-color: #eee2dc;
+}
+
+p {
+    background-color: #dbb2eb;
+    padding: 20px;
+    line-height: 25px;
+}
+
+article {
+    background-color: #dbb2eb;
+    padding: 20px;
+    line-height: 25px;
+}
+
+ul {
+    background-color: #dbb2eb;
+    padding: 20px;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: #dbb2eb;
+        padding: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    nav a {
+        display: block;
+        viewport-fit: 100%;
+        padding: 10px;
+    }
+    span {
+        display: none;
+    }

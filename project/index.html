@@ -3,46 +3,73 @@
     <head>
         <meta charset="utf-8">
         <title>UniSpeaks - Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .header {
+                text-align: center;
+                border: 3px;
+                padding: 10px;
+            }
+            .leftbox, .middlebox, .rightbox {
+                background-color: #fcd5b6;
+                border: 3px;
+                padding: 10px;
+
+            }
+        </style>
     </head>
     <body>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="blog.html">Blog</a> |
-            <a href="podcast.html">Podcast</a> |
+            <a href="index.html">Home</a> <span>|</span>
+            <a href="blog.html">Blog</a> <span>|</span>
+            <a href="podcast.html">Podcast</a> <span>|</span>
             <a href="connect.html">Connect</a>
         </nav>
 
-        <h1>UniSpeaks</h1>
+        <div class="header">
+                <h1>UniSpeaks</h1>
+            
 
-        <hr>
+            <hr>
 
-        <h2>Welcome</h2>
-        <p>
-            College can be a confusing and stressful time. We are on our own dealing with school work, social lives, homesickness--all while trying to take care of ourselves.
-        </p>
-        <p>
-            My name is Alexis. I am a sophomore at Syracuse University and I am studying public relations with a double minor in information management and technology and sociology. As I am juggling my academics, extracurriculars, and social life at college, I want to create this platform to share my tips and experiences to connect with other college students going through the same thing.
-        </p>
+            <main>
+                <h2>Welcome</h2>
+                <p>
+                    College can be a confusing and stressful time. We are on our own dealing with school work, social lives, homesickness--all while trying to take care of ourselves.
+                <br>
+                    My name is Alexis. I am a sophomore at Syracuse University and I am studying public relations with a double minor in information management and technology and sociology. As I am juggling my academics, extracurriculars, and social life at college, I want to create this platform to share my tips and experiences to connect with other college students going through the same thing.
+                </p>
+        </div>
 
-        <hr>
+            <hr>
 
-        <h3>To Read</h3>
-            <p>
-                Find short easy-to-read articles below about different topics.
-            </p>
-            <a href="blog.html">See More</a>
+            <section class="leftbox">
+                <h3>To Read</h3>
+                    <p>
+                        Find short easy-to-read articles below about different topics.
+                    </p>
+                    <a href="blog.html">See More</a>
+            </section>
 
-        <h3>To Listen</h3>
-            <p>
-                Listen to short podcasts featuring conversations with my friends: more perspectives to relate to and take in.
-            </p>
-            <a href="podcast.html">See More</a>
+            <section class="middlebox">
+                <h3>To Listen</h3>
+                    <p>
+                        Listen to short podcasts featuring conversations with my friends: more perspectives to relate to and take in.
+                    </p>
+                    <a href="podcast.html">See More</a>
+            </section>
 
-        <h3>To Share</h3>
-            <p>
-                Have your own words of wisdom? Want to share your own experiences? Submit them here!
-            </p>
-            <a href="connect.html">See More</a>
+            <section class="rightbox">
+            <h3>To Share</h3>
+                <p>
+                    Have your own words of wisdom? Want to share your own experiences? Submit them here!
+                </p>
+                <a href="connect.html">See More</a>
+            </section>
+        </main>
     </body>
 
     <footer>
