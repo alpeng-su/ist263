@@ -11,7 +11,7 @@ a:hover {
 }
 
 nav {
-    background-color: #dbb2eb;
+    background-color: #f3d9fc;
     padding: 10px;
     margin-bottom: 30px;
 }
@@ -48,7 +48,7 @@ ul {
 
 @media only screen and (max-width: 600px) {
     nav {
-        background-color: #dbb2eb;
+        background-color: #f3d9fc;
         padding: 10px;
         margin-bottom: 30px;
         text-align: center;
