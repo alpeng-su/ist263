@@ -19,6 +19,19 @@
                 border: 3px;
                 padding: 10px;
             }
+            #skipbutton {
+                position: absolute;
+                /* position based on top left of viewport */
+                left: -999px;
+                /* means the element is off screen */
+                background-color: white;
+                border: 1px solid black;
+            }
+            /* focus means when the item is tabbed to */
+            #skipbutton:focus {
+                position: absolute;
+                left: 10px;
+            }
         </style>
     </head>
     <body>
@@ -37,6 +50,8 @@
         </div>
 
         <hr>
+
+        <a id="skipbutton" href="#maincontent">Skip to Content</a>
 
         <main>
             <h2>Recent Podcasts</h2>

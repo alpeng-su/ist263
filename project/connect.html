@@ -26,6 +26,19 @@
             textarea {
                 width: 99%;
             }
+            #skipbutton {
+                position: absolute;
+                /* position based on top left of viewport */
+                left: -999px;
+                /* means the element is off screen */
+                background-color: white;
+                border: 1px solid black;
+            }
+            /* focus means when the item is tabbed to */
+            #skipbutton:focus {
+                position: absolute;
+                left: 10px;
+            }
         </style>
     </head>
     <body>
@@ -35,6 +48,8 @@
             <a href="podcast.html">Podcast</a> <span>|</span>
             <a href="connect.html">Connect</a>
         </nav>
+
+        <a id="skipbutton" href="#maincontent">Skip to Content</a>
 
         <main>
             <div class="header">

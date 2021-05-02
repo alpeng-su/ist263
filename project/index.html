@@ -18,7 +18,23 @@
                 background-color: #fcd5b6;
                 border: 3px;
                 padding: 10px;
-
+                text-align: center;
+            }
+            .responsive {
+                max-width: 100%;
+            }
+            #skipbutton {
+                position: absolute;
+                /* position based on top left of viewport */
+                left: -999px;
+                /* means the element is off screen */
+                background-color: white;
+                border: 1px solid black;
+            }
+            /* focus means when the item is tabbed to */
+            #skipbutton:focus {
+                position: absolute;
+                left: 10px;
             }
         </style>
     </head>
@@ -30,14 +46,18 @@
             <a href="connect.html">Connect</a>
         </nav>
 
-        <div class="header">
-                <h1>UniSpeaks</h1>
-            
+
+        <div class="header">                
+                <header>
+                    <img src="images/banner.jpg" alt="Site Header" class="responsive">
+                </header>
 
             <hr>
 
+            <a id="skipbutton" href="#maincontent">Skip to Content</a>
+
             <main>
-                <h2>Welcome</h2>
+                <h1>UniSpeaks</h1>
                 <p>
                     College can be a confusing and stressful time. We are on our own dealing with school work, social lives, homesickness--all while trying to take care of ourselves.
                 <br>
@@ -48,7 +68,9 @@
             <hr>
 
             <section class="leftbox">
-                <h3>To Read</h3>
+                <h2>To Read</h2>
+                <!-- change these icons -->
+                <img src="images/readicon.png" alt="Blog Icon">
                     <p>
                         Find short easy-to-read articles below about different topics.
                     </p>
@@ -56,7 +78,9 @@
             </section>
 
             <section class="middlebox">
-                <h3>To Listen</h3>
+                <h2>To Listen</h2>
+                <!-- change these icons -->
+                <img src="images/podcasticon.png" alt="Podcast Icon">
                     <p>
                         Listen to short podcasts featuring conversations with my friends: more perspectives to relate to and take in.
                     </p>
@@ -64,7 +88,9 @@
             </section>
 
             <section class="rightbox">
-            <h3>To Share</h3>
+            <h2>To Share</h2>
+            <!-- change these icons -->
+            <img src="images/connecticon.png" alt="Connect Icon">
                 <p>
                     Have your own words of wisdom? Want to share your own experiences? Submit them here!
                 </p>
