@@ -21,6 +21,7 @@
                 background-color: #fcd5b6;
                 border: 3px;
                 padding: 10px;
+                text-align: center;
             }
             #skipbutton {
                 position: absolute;
@@ -37,6 +38,9 @@
             }
             footer {
                 text-align: right;
+            } 
+            .responsive {
+                max-width: 100%;
             }
         </style>
     </head>
@@ -49,6 +53,14 @@
         </nav>
 
         <div class="header">
+            <header>
+                <img src="images/podcastbanner.jpg" alt="Podcast Header" class="responsive">
+            </header>
+
+        <hr>
+
+        <a id="skipbutton" href="#maincontent">Skip to Content</a>
+            
             <h1>Tune In</h1>
             <p>
                 Got 15 minutes? Listen to short podcasts featuring conversations with some of my friends: more perspectives to relate to and take in.
@@ -57,14 +69,13 @@
 
         <hr>
 
-        <a id="skipbutton" href="#maincontent">Skip to Content</a>
-
         <main>
             <h2>Recent Podcasts</h2>
 
             <div class="podcast1">
                 <h3>"Changing Majors" ft. Kaitlyn</h3>
-                <audio controls>
+                <img src="images/podcasticon.png" alt="Podcast Icon"><br>
+                <audio controls="controls">
                     <source src="changingmajors.m4a" type="audio/m4a">
                     Your browswer does not support the audio element.
                 </audio>
