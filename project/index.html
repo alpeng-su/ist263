@@ -28,13 +28,10 @@
             }
             #skipbutton {
                 position: absolute;
-                /* position based on top left of viewport */
                 left: -999px;
-                /* means the element is off screen */
                 background-color: white;
                 border: 1px solid black;
             }
-            /* focus means when the item is tabbed to */
             #skipbutton:focus {
                 position: absolute;
                 left: 10px;
@@ -52,6 +49,7 @@
             <a href="connect.html">Connect</a>
         </nav>
 
+        <a id="skipbutton" href="#maincontent">Skip to Content</a>
 
         <div class="header">                
                 <header>
@@ -60,7 +58,7 @@
 
             <hr>
 
-            <a id="skipbutton" href="#maincontent">Skip to Content</a>
+            <a id="maincontent"></a> 
 
             <main>
                 <h1>Welcome</h1>
@@ -75,7 +73,6 @@
 
             <section class="leftbox">
                 <h2>To Read</h2>
-                <!-- change these icons -->
                 <img src="images/readicon.png" alt="Blog Icon">
                     <p>
                         Find short easy-to-read articles below about different topics.
@@ -85,7 +82,6 @@
 
             <section class="middlebox">
                 <h2>To Listen</h2>
-                <!-- change these icons -->
                 <img src="images/podcasticon.png" alt="Podcast Icon">
                     <p>
                         Listen to short podcasts featuring conversations with my friends: more perspectives to relate to and take in.
@@ -95,7 +91,6 @@
 
             <section class="rightbox">
             <h2>To Share</h2>
-            <!-- change these icons -->
             <img src="images/connecticon.png" alt="Connect Icon">
                 <p>
                     Have your own words of wisdom? Want to share your own experiences? Submit them here!

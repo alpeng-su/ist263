@@ -49,6 +49,11 @@
                 max-width: 100%;
             }
         </style>
+        <script>
+            function FirstFunction () {
+                alert("You left this form element");
+            }
+        </script>
     </head>
     <body>
         <nav>
@@ -58,6 +63,8 @@
             <a href="connect.html">Connect</a>
         </nav>
 
+     <a id="skipbutton" href="#maincontent">Skip to Content</a>
+
         <main>
             <div class="header">
                 <header>
@@ -65,8 +72,8 @@
                 </header>
 
             <hr>
-
-            <a id="skipbutton" href="#maincontent">Skip to Content</a>
+            
+            <a id="maincontent"></a> 
 
                 <h1>Tip Line</h1>
                 <p>
@@ -80,7 +87,7 @@
                 <h3>Send Your Thoughts</h3>
                 <form action="mailto:alpeng@g.syr.edu" method="post">
                     <label for="firstname">First Name:</label>
-                    <input type="text" name="first name" id="firstname"><br>
+                    <input onblur="FirstFunction();" type="text" name="first name" id="firstname"><br>
 
                     <label for="message">Message:</label>
                         <textarea name="message" id="message" rows="10" cols="50">Write me a message here.</textarea><br>
